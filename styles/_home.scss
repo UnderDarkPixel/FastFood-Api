@@ -1,0 +1,48 @@
+.intro {
+    width: 98%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(213, 128, 0);
+    padding: 0px 30px;
+    background-color: rgb(255, 144, 46);
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.circle_img {
+    width: 500px;
+    height: 500px;
+    padding-right: 230px;
+    background-color: orange;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_img {
+    width: 600px;
+}
+
+.intro_left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    // border: 1px solid black;
+    font-size: 30px;
+}
+
+.intro_title {
+    font-size: 32px;
+}
+
+.intro_description {
+    color: rgba(140, 140, 140, 0.592);
+}

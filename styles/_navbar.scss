@@ -1,0 +1,102 @@
+.title {
+    transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.title span {
+    color: rgb(222, 104, 0);
+    font-size: 20px;
+}
+
+.search {
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid rgb(164, 107, 0);
+    padding-left: 10px;
+    transition: all 0.4s;
+
+    &:focus {
+        outline: none;
+        border: 3px solid rgb(164, 107, 0);
+    }
+
+    &::-webkit-search-cancel-button {
+        appearance: none;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.theme {
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transition: all 0s;
+        color: white;
+    }
+}
+
+.registerButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: orange;
+    transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transition: all 0s;
+        background-color: white;
+        color: black;
+    }
+}
+
+.login {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: orange;
+    transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transition: all 0s;
+        background-color: white;
+        color: black;
+    }
+}
