@@ -1,0 +1,92 @@
+body.darktheme {
+    background-color: black;
+}
+
+body.darktheme nav {
+    background: rgb(19, 19, 19);
+    color: orange;
+}
+
+body.darktheme a {
+    color: orange;
+}
+
+body.darktheme .theme{
+    color: orange;
+}
+
+body.darktheme .intro_title {
+    color: white;
+}
+
+body.darktheme .intro{
+    background-color: black;
+}
+
+body.darktheme .circle_img {
+    background-color: rgb(19, 19, 19);
+}
+
+body.darktheme .sign{
+    background-color: white;
+    color: black;
+}
+
+body.darktheme .login {
+    background-color: white;
+    color: black;
+}
+
+body.darktheme .card-head {
+    background-color: rgb(19, 19, 19);
+    border-color: orange;
+}
+
+body.darktheme .images {
+    border-color: orange;
+}
+
+body.darktheme .description-card {
+    background-color: rgb(19, 19, 19);
+    border-color: orange;
+    color: orange;
+}
+
+body.darktheme .addCart {
+    border-color: orange;
+    background-color: rgb(19, 19, 19);
+
+    &:hover {
+        background-color: black;
+    }
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
+}
+
+body.darktheme .Order {
+    border-color: orange;
+    background-color: rgb(19, 19, 19);
+
+    &:hover {
+        background-color: black;
+    }
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
+}
+
+body.darktheme .search {
+    background-color: rgb(19, 19, 19);
+    border-color: white;
+    color: orange;
+
+    &::placeholder {
+        color: orange;
+    }
+
+}

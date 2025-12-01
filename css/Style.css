@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -33,6 +36,7 @@ li {
 }
 li:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 a {
@@ -76,6 +80,12 @@ a:hover {
 .search:hover {
   transform: scale(1.1);
 }
+.search::-moz-placeholder {
+  color: black;
+}
+.search::placeholder {
+  color: black;
+}
 
 .theme {
   width: 30px;
@@ -114,6 +124,7 @@ a:hover {
 }
 .sign:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .sign:active {
   transition: all 0s;
@@ -132,6 +143,7 @@ a:hover {
 }
 .login:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .login:active {
   transition: all 0s;
@@ -209,7 +221,7 @@ a:hover {
   padding: 0px 30px;
   background-color: rgb(255, 144, 46);
   border-radius: 50px;
-  margin-top: 5px;
+  margin-top: 8px;
   margin-left: 15px;
 }
 
@@ -281,40 +293,6 @@ a:hover {
   font-size: 12px;
 }
 
-.addCart {
-  width: 296px;
-  height: 50px;
-  border-bottom-left-radius: 20px;
-  border: none;
-  background-color: black;
-  color: orange;
-  border: 1px solid white;
-}
-.addCart:hover {
-  background-color: rgb(30, 30, 30);
-}
-.addCart:active {
-  background-color: white;
-}
-
-.button-cart {
-  position: absolute;
-  bottom: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Order {
-  width: 54px;
-  height: 50px;
-  border-bottom-right-radius: 20px;
-  border: none;
-  background-color: black;
-  border: 1px solid white;
-  color: orange;
-}
-
 .images {
   width: 100%;
   height: auto;
@@ -325,6 +303,12 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-img {
+  width: 346px;
+  height: 260px;
+  margin-top: 10px;
 }
 
 .description-card {
@@ -341,10 +325,46 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.card-img {
-  width: 260px;
-  height: 260px;
-  margin-top: 10px;
+.button-cart {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addCart {
+  width: 296px;
+  height: 50px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  background-color: black;
+  color: orange;
+  border: 1px solid white;
+}
+.addCart:hover {
+  background-color: rgb(30, 30, 30);
+}
+.addCart:active {
+  background-color: white;
+  color: black;
+}
+
+.Order {
+  width: 54px;
+  height: 50px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  background-color: black;
+  border: 1px solid white;
+  color: orange;
+}
+.Order:hover {
+  background-color: rgb(30, 30, 30);
+}
+.Order:active {
+  background-color: white;
+  color: black;
 }
 
 @media (max-width: 500px) {
@@ -354,4 +374,93 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
   }
+}
+body.darktheme {
+  background-color: black;
+}
+
+body.darktheme nav {
+  background: rgb(19, 19, 19);
+  color: orange;
+}
+
+body.darktheme a {
+  color: orange;
+}
+
+body.darktheme .theme {
+  color: orange;
+}
+
+body.darktheme .intro_title {
+  color: white;
+}
+
+body.darktheme .intro {
+  background-color: black;
+}
+
+body.darktheme .circle_img {
+  background-color: rgb(19, 19, 19);
+}
+
+body.darktheme .sign {
+  background-color: white;
+  color: black;
+}
+
+body.darktheme .login {
+  background-color: white;
+  color: black;
+}
+
+body.darktheme .card-head {
+  background-color: rgb(19, 19, 19);
+  border-color: orange;
+}
+
+body.darktheme .images {
+  border-color: orange;
+}
+
+body.darktheme .description-card {
+  background-color: rgb(19, 19, 19);
+  border-color: orange;
+  color: orange;
+}
+
+body.darktheme .addCart {
+  border-color: orange;
+  background-color: rgb(19, 19, 19);
+}
+body.darktheme .addCart:hover {
+  background-color: black;
+}
+body.darktheme .addCart:active {
+  background-color: white;
+  color: black;
+}
+
+body.darktheme .Order {
+  border-color: orange;
+  background-color: rgb(19, 19, 19);
+}
+body.darktheme .Order:hover {
+  background-color: black;
+}
+body.darktheme .Order:active {
+  background-color: white;
+  color: black;
+}
+
+body.darktheme .search {
+  background-color: rgb(19, 19, 19);
+  border-color: white;
+  color: orange;
+}
+body.darktheme .search::-moz-placeholder {
+  color: orange;
+}
+body.darktheme .search::placeholder {
+  color: orange;
 }/*# sourceMappingURL=Style.css.map */

@@ -30,38 +30,12 @@ function showData(data) {
             </div>
             <div class="description-card">
                 <p>${ingredients}</p>
-                <div class="id">Id:${id}</div>
             </div>
             <div class="button-cart">
                 <button class="addCart">Add Cart</button>
                 <button class="Order"><i class="ri-shopping-cart-2-fill"></i></button>
             </div>
         </div>
-        `;
-
-        idcard = id
-    });
-}
-
-AddCart.addEventListener("click", () => {
-    SelCard += `
-            <div class="FoodCard">
-                <div class="card-head">
-                    <div class="title">${data[idcard].name}</div>
-                    <div class="status">⭐ ${rating}</div>
-                    <div class="time-cooking">⏱ Prep: ${prepTimeMinutes}m | Cook: ${cookTimeMinutes}m</div>
-                </div>
-                <div class="images">
-                    <img src="${image}" alt="test" class="card-img">
-                </div>
-                <div class="description-card">
-                    <p>${ingredients}</p>
-                    <div class="id">Id:${id}</div>
-                </div>
-                <div class="button-cart">
-                    <button class="addCart">Add Cart</button>
-                    <button class="Order"><i class="ri-shopping-cart-2-fill"></i></button>
-                </div>
-            </div>
         `
-})
+    })
+}
