@@ -375,6 +375,84 @@ a:hover {
     flex-wrap: wrap;
   }
 }
+.forRegister {
+  color: orange;
+  text-decoration: none;
+}
+.forRegister:hover {
+  text-decoration: none;
+}
+
+.register_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerForRegister {
+  width: 500px;
+  height: 300px;
+  background-color: orange;
+  display: flex;
+  justify-content: start;
+  padding-left: 10px;
+  align-items: center;
+  border: 2px solid rgb(232, 151, 0);
+  border-radius: 40px;
+  gap: 60px;
+}
+
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+.inp {
+  width: 300px;
+  height: 40px;
+  border: 2px solid rgb(228, 149, 0);
+  border-radius: 30px;
+  padding-left: 10px;
+}
+.inp:focus {
+  outline: none;
+  border: 4px solid rgb(228, 149, 0);
+}
+
+.RegisterButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.regbtn {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: orange;
+}
+
+.regbtn a {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: orange;
+}
+.regbtn a:hover {
+  text-decoration: none;
+}
+
 body.darktheme {
   background-color: black;
 }
@@ -463,4 +541,18 @@ body.darktheme .search::-moz-placeholder {
 }
 body.darktheme .search::placeholder {
   color: orange;
+}
+
+body.darktheme .forRegister {
+  color: black;
+}
+
+body.darktheme .regbtn {
+  color: black;
+  background-color: white;
+}
+
+body.darktheme .regbtn a {
+  color: black;
+  background-color: white;
 }/*# sourceMappingURL=Style.css.map */
